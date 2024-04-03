@@ -1,6 +1,6 @@
 # Maintainer: Chaiwat Suttipongsakul <cwt@bashell.com>
 pkgname="th1520-vpu"
-pkgver=r1.08fc4cc
+pkgver=r2.9ded7d6
 pkgrel=1
 pkgdesc="TH1520 VPU for Arch Linux"
 arch=('riscv64')
@@ -25,12 +25,12 @@ package() {
     "${pkgdir}/usr/lib/udev/rules.d/70-hantro.rules"
 
   cd "$srcdir/$pkgname/addons/usr/lib/riscv64-linux-gnu/libomxil-bellagio0"
-  install -Dm644 libOMX.hantro.H2.image.encoder.so \
+  install -Dm755 libOMX.hantro.H2.image.encoder.so \
     "${pkgdir}/usr/lib/bellagio/libOMX.hantro.H2.image.encoder.so"
-  install -Dm644 libOMX.hantro.H2.video.encoder.so \
+  install -Dm755 libOMX.hantro.H2.video.encoder.so \
     "${pkgdir}/usr/lib/bellagio/libOMX.hantro.H2.video.encoder.so"
-  install -Dm644 libOMX.hantro.VC8000D.image.decoder.so \
+  install -Dm755 libOMX.hantro.VC8000D.image.decoder.so \
     "${pkgdir}/usr/lib/bellagio/libOMX.hantro.VC8000D.image.decoder.so"
-  install -Dm644 libOMX.hantro.VC8000D.video.decoder.so \
+  install -Dm755 libOMX.hantro.VC8000D.video.decoder.so \
     "${pkgdir}/usr/lib/bellagio/libOMX.hantro.VC8000D.video.decoder.so"
 }
