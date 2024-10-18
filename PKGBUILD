@@ -1,6 +1,6 @@
 # Maintainer: Chaiwat Suttipongsakul <cwt@bashell.com>
 pkgname="th1520-vpu"
-pkgver=r4.b9baefa
+pkgver=r5.74ccc0c
 pkgrel=1
 pkgdesc="TH1520 VPU for Arch Linux"
 arch=('riscv64')
